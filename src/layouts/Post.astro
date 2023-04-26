@@ -9,8 +9,6 @@ import Header from 'astro-travelens/header'
 import Tags from 'astro-travelens/tags'
 // @ts-ignore 
 import Footer from 'astro-travelens/footer'
-// @ts-ignore 
-import Metadata from 'astro-travelens/metadata'
 
 interface Props {
   post: CollectionEntry<'post'>
@@ -23,16 +21,14 @@ const slugify = (url: string) => url
   .replace(/[^a-z0-9 -]/g, '')
   .replace(/\s+/g, '-')
 ---
-
-<Layout title={post.data.title}>
+<Layout
+  title={post.data.title}
+  description={post.data.description}
+  date={post.data.date}
+  image={post.data.image}
+  tags={post.data.tags}
+>
   <Header />
-  <Metadata
-    title={post.data.title}
-    description={post.data.description}
-    date={post.data.date}
-    image={post.data.image}
-    tags={post.data.tags}
-  />
   <div
     class="-mt-24 relative w-full bg-black flex items-center justify-center overflow-hidden"
   >
