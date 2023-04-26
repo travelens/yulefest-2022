@@ -1,0 +1,91 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import { Image } from 'astro:assets'
+// @ts-ignore 
+import Layout from 'astro-travelens/layout'
+// @ts-ignore 
+import Header from 'astro-travelens/header'
+// @ts-ignore 
+import Tags from 'astro-travelens/tags'
+// @ts-ignore 
+import Footer from 'astro-travelens/footer'
+// @ts-ignore 
+import Metadata from 'astro-travelens/metadata'
+
+interface Props {
+  trip: CollectionEntry<'trip'>
+}
+
+const { trip } = Astro.props
+
+const slugify = (url : string) => url
+  .toLowerCase()
+  .replace(/[^a-z0-9 -]/g, '')
+  .replace(/\s+/g, '-')
+---
+
+<Layout title={trip.data.title}>
+  <Header />
+  <Metadata
+    title={trip.data.title}
+    description={trip.data.description}
+    date={trip.data.end}
+    image={trip.data.image}
+    tags={trip.data.tags}
+  />
+  <div
+    class="-mt-24 relative w-full bg-black flex items-center justify-center overflow-hidden"
+  >
+    <div class="relative h-96">
+      <Image
+        src={trip.data.image}
+        class="w-full object-cover opacity-50"
+        alt={trip.data.title}
+      />
+    </div>
+  </div>
+  <div
+    class="max-w-4xl mx-auto bg-white pt-12 px-12 lg:px-24 -mt-32 relative z-10"
+  >
+    <h2 class="flex items-center uppercase tracking-widest text-xs text-neutral-600">
+      <a href={'/place/' + slugify(trip.data.place)} class="hover:text-pink">
+        <span class="w-4 h-4 i-fa6-solid-globe"></span>
+        <span class="ml-1">{trip.data.place}</span>
+      </a>
+      <span class="w-4 h-4 mx-4 i-fa6-solid-angles-right"></span>
+      <span class="w-4 h-4 i-fa6-solid-location-arrow"></span>
+      <span class="ml-1">{trip.data.location}</span>
+    </h2>
+    <h1 class="font-display text-2xl md:text-3xl text-gray-900 mt-4">
+      {trip.data.title}
+    </h1>
+    <Tags tags={trip.data.tags} />
+    <div class="flex items-center my-2 text-neutral-600">
+      <span class="w-4 h-4 i-fa6-solid-calendar-days"></span>
+      <span class="ml-1">
+        {
+          new Date(trip.data.start).toLocaleString('en-AU', {
+            dateStyle: 'long',
+            timeZone: trip.data.timezone,
+          })
+        }
+      </span>
+      <span class="w-4 h-4 mx-1 i-fa6-solid-arrow-right"></span>
+      <span class="ml-1">
+        {
+          new Date(trip.data.end).toLocaleString('en-AU', {
+            dateStyle: 'long',
+            timeZone: trip.data.timezone,
+          })
+        }
+      </span>
+    </div>
+
+    <div class="prose italic prose-sm sm:prose lg:prose-lg mt-6">
+      {trip.data.description}
+    </div>
+    <hr class="w-full h-1 bg-pink-200 border-0 rounded">
+  </div>
+  <slot />
+  <Footer />
+</Layout>

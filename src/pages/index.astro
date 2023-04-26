@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content'
+import { Image } from 'astro:assets'
+import Trip from '../layouts/Trip.astro'
+import Tripmap from '../components/Tripmap.astro'
+
+const trips = await getCollection('trip', ({ data }) => {
+  return data.draft !== true;
+})
+const trip = trips[0]
+const { Content } = await trip.render();
+
+const posts = await getCollection('post', ({ data }) => {
+  return data.draft !== true;
+})
+const sortedPosts = posts.sort((a, b) => +a.data.date - +b.data.date)
+---
+<Trip trip={trip}>
+  <div class="max-w-4xl mx-auto bg-white pb-6 mb-6 px-12 lg:px-24 relative z-10">
+    <div class="prose prose-sm sm:prose lg:prose-lg pt-6">
+      <Content />
+    </div>
+  </div>
+  {sortedPosts.map((post, i) => (
+    <div class="container mx-auto px-6 py-4 grid grid-cols-1 lg:grid-cols-2 mb-4 bg-rose-50 shadow-lg shadow-neutral-400 rounded-lg">
+      <div class="relative h-52 md:h-72 lg:h-auto">
+          <a href={import.meta.env.BASE_URL + post.slug}>
+              <Image src={post.data.image} width={1024} class="absolute inset-0 w-full h-full object-cover p-4 bg-white hover:bg-pink-200" alt={post.data.title}/>
+          </a>
+      </div>
+      <div class="px-6 py-12 md:p-16 lg:p-32 flex items-center justify-center order-last" class:list={[ i % 2 == 0 && 'lg:order-first' ]}>
+        <div>
+          <a href={import.meta.env.BASE_URL + post.slug}>
+            <h3 class="text-4xl mb-6 font-display text-black hover:text-pink leading-tight">{post.data.title}</h3>
+          </a>
+          <div class="flex items-center my-2 text-neutral-600">
+            <span class="w-4 h-4 i-fa6-solid-location-arrow"></span>
+            <span class="ml-1 mr-4">{post.data.location}</span>
+            <span class="w-4 h-4 i-fa6-solid-calendar-days"></span>
+            <span class="ml-1">
+              {
+                new Date(post.data.date).toLocaleString('en-AU', {
+                  dateStyle: 'long',
+                  timeStyle: 'short',
+                  timeZone: post.data.timezone,
+                })
+              }
+            </span>
+          </div>
+          <p>{post.data.description}</p>
+          <a
+            href={import.meta.env.BASE_URL + post.slug}
+            class="inline-block bg-pink-400 text-white hover:bg-pink-500 text-sm tracking-widest font-heading px-8 py-4 mt-4"
+          >
+            Read
+          </a>
+        </div>
+      </div>
+    </div>
+  ))}
+  <Tripmap />
+</Trip>
