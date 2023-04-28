@@ -16,7 +16,7 @@ tags:
 ---
 After breakfast, we decided to walk part of the Six Foot Tracks that passes through Dryridge Estate.
 
-The Megalong Valley is very old, its bedrock first laid down 450 million years ago.Then about 250 million years ago the area that we now know as the Blue Mountains and the Sydney Basin were inundated by the sea which deposited a deep layer of sand.  Over many more millions of years this sand hardened into the sandstone.  At the beginning of the Triassic period 200 million years ago when dinosaurs roamed Australia, upward teutonic forces created the sandstone plateau that is the basic mountains landform today. This uplift caused rivers to run more vigorously, eroding the relatively soft sandstone to create the vast network of canyons and gorges - one of which is the Megalong Valley.
+The Megalong Valley is very old, its bedrock first laid down 450 million years ago. Then about 250 million years ago the area that we now know as the Blue Mountains and the Sydney Basin were inundated by the sea which deposited a deep layer of sand.  Over many more millions of years this sand hardened into the sandstone.  At the beginning of the Triassic period 200 million years ago when dinosaurs roamed Australia, upward teutonic forces created the sandstone plateau that is the basic mountains landform today. This uplift caused rivers to run more vigorously, eroding the relatively soft sandstone to create the vast network of canyons and gorges - one of which is the Megalong Valley.
 
 Finally, around 17 million years ago, molten igneous rock vented into the valley laying down the granite from which Dryridge vineyard soils are derived and which can be seen today in the form of large spherical boulders.
 
@@ -24,7 +24,7 @@ As part of the Gundungurra First Nation territory, the Megalong Valley is profou
 
 Following European discovery and the way west through the Blue Mountains, a few hardy families settled in the valley from 1838 grazing cattle and pursuing other agriculture.  Timber getting began shortly after. There was significant mining of kerosene shale on the eastern escarpment later still. The first shale mine opened in 1870 and the Megalong township of 200 was quickly established - its ruins can still be seen along the Six Foot Track towards Katoomba, a short and pleasant walk from the estate. The last of the mining was in the first few years of the 20th Century.
 
-The Six Foot Track traverses Dryridge Estate and is one of Australia’s finest scenic walks. It was built in 1887 to provide better access between Katoomba, the principal town in the Blue Mountains, and the Jenolan Caves located in the Great Dividing Range west of the Megalong Valley.
+The [Six Foot Track](https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/six-foot-track) traverses Dryridge Estate and is one of Australia’s finest scenic walks. It was built in 1887 to provide better access between Katoomba, the principal town in the Blue Mountains, and the Jenolan Caves located in the Great Dividing Range west of the Megalong Valley.
 
 The Jenolan Caves are regarded as the oldest, best decorated and most complex in the world.  They were first discovered by European settlers in 1838 and became a major 19th Century tourist attraction despite the difficult journey by horse and buggy across rugged terrain from Tarana, then the closest railway station.  Recently-installed internal lighting further highlights the caves visual majesty.
 

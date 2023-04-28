@@ -12,6 +12,7 @@ map: [-33.73575,150.21829,17]
 tags:
   - Megalong Valley
   - Dryridge
-  - breakfast
+  - campfire
+  - sunset
 ---
 Another beautiful day ends with a fiery sunset as we prepared and ate blinis and ate them with marshmallows by the fire.

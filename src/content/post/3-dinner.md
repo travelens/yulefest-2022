@@ -12,7 +12,7 @@ map: [-33.73575,150.21829,17]
 tags:
   - Megalong Valley
   - Dryridge
-  - breakfast
+  - dinner
 ---
 Ivan and Dagmar prepared a delicious Italian dinner of smoked trout, a cheese and meat platter, followed by duck ragu and saffron and truffle risotto. We all dressed in Christmas outfits. I wore my Christmas coloured cheongsam.
 
