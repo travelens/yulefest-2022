@@ -15,4 +15,4 @@ tags:
   - sunset
   - wine
 ---
-We had mulled wine and marshmallows next to the fire whilst watching the sun set. After that we went back to the house and made burgers for dinner.
+We had mulled wine next to the fire whilst watching the sun set. After that we went back to the house and made burgers for dinner.
