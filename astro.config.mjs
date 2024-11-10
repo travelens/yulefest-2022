@@ -7,7 +7,7 @@ import { SiteMetadata } from 'astro-travelens/config'
 // https://astro.build/config
 export default defineConfig({
   site: SiteMetadata.site,
-  base: import.meta.env.npm_package_name + '/',
+  base: process.env.npm_package_name + '/',
   integrations: [
     markdoc(),
     alpine(),
