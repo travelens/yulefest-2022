@@ -8,12 +8,13 @@ timezone: Australia/NSW
 location: Dryridge Estate
 image: ../../assets/gallery/2-dryridge-estate/Dryridge Estate (1).jpeg
 gallery: 2-dryridge-estate
-map: [-33.73575,150.21829,17]
+map: [-33.73575, 150.21829, 17]
 tags:
   - Megalong Valley
   - Dryridge
   - winery
 ---
+
 Nestled in the beautiful Megalong Valley, surrounded by towering sandstone escarpments, [Dryridge Estate](https://www.dryridge.com.au/) is a stunning boutique vineyard 20 minutes by car from Blackheath, the nearest Blue Mountains township.
 
 We enjoyed delicious wines, cheese platters and some of the best scenery in the Blue Mountains. The selection included cheeses, cold meats, delicious accompaniments like pickles, olives and sundried tomatoes. Served with fresh locally made bread, grissini and flat bread.

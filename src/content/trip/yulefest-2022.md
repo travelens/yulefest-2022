@@ -13,11 +13,12 @@ tags:
   - Katoomba
   - Megalong Valley
 ---
+
 A short holiday with friends celebrating YuleFest in the Blue Montains, followed by a stay at [The Homestead at Dryridge Estate](https://www.dryridge.com.au/pages/homestead). Featuring wine tasting, a walk along the [Six Foot Track](https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/six-foot-track), and some great food and campfires.
 
-| Day | Date | Itinerary |
-| ---: | :---- | :--------- |
-| 0 | Sat 30 July | YuleFest Gala Dinner at Carrington Hotel |
-| 1 | Sun 31 July | Katoomba, Megalong Valley wine tasting |
-| 2 | Mon 01 August | Megalong Valley Six Foot Track |
-| 3 | Tue 02 August | Megalong Valley Tea Rooms |
+| Day | Date          | Itinerary                                |
+| --: | :------------ | :--------------------------------------- |
+|   0 | Sat 30 July   | YuleFest Gala Dinner at Carrington Hotel |
+|   1 | Sun 31 July   | Katoomba, Megalong Valley wine tasting   |
+|   2 | Mon 01 August | Megalong Valley Six Foot Track           |
+|   3 | Tue 02 August | Megalong Valley Tea Rooms                |

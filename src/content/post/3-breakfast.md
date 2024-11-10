@@ -8,10 +8,11 @@ timezone: Australia/NSW
 location: Dryridge Estate
 image: ../../assets/gallery/3-breakfast/Breakfast (1).jpeg
 gallery: 3-breakfast
-map: [-33.73575,150.21829,17]
+map: [-33.73575, 150.21829, 17]
 tags:
   - Megalong Valley
   - Dryridge
   - breakfast
 ---
+
 We cooked and ate a big breakfast including sausages, bacon, tomatoes, scrambled eggs and toast.

@@ -8,11 +8,12 @@ timezone: Australia/NSW
 location: Dryridge Estate
 image: ../../assets/gallery/2-mulled-wine/Mulled wine (1).jpeg
 gallery: 2-mulled-wine
-map: [-33.73575,150.21829,17]
+map: [-33.73575, 150.21829, 17]
 tags:
   - Megalong Valley
   - Dryridge
   - sunset
   - wine
 ---
+
 We had mulled wine next to the fire whilst watching the sun set. After that we went back to the house and made burgers for dinner.

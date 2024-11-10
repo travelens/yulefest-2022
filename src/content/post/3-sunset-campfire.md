@@ -8,11 +8,12 @@ timezone: Australia/NSW
 location: Dryridge Estate
 image: ../../assets/gallery/3-sunset-campfire/Sunset campfire (4).jpeg
 gallery: 3-sunset-campfire
-map: [-33.73575,150.21829,17]
+map: [-33.73575, 150.21829, 17]
 tags:
   - Megalong Valley
   - Dryridge
   - campfire
   - sunset
 ---
+
 Another beautiful day ends with a fiery sunset as we prepared and ate blinis and ate them with marshmallows by the fire.

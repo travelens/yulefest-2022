@@ -5,74 +5,86 @@ import Trip from '../layouts/Trip.astro'
 import Tripmap from '../components/Tripmap.astro'
 
 const trips = await getCollection('trip', ({ data }) => {
-  return data.draft !== true;
+  return data.draft !== true
 })
 const trip = trips[0]
-const { Content } = await trip.render();
+const { Content } = await trip.render()
 
 const posts = await getCollection('post', ({ data }) => {
-  return data.draft !== true;
+  return data.draft !== true
 })
 const sortedPosts = posts.sort((a, b) => +a.data.date - +b.data.date)
 ---
+
 <Trip trip={trip}>
-  <div class="max-w-4xl mx-auto bg-white pb-6 mb-6 px-12 lg:px-24 relative z-10">
-    <div class="prose prose-sm sm:prose lg:prose-lg pt-6">
+  <div class='relative z-10 mx-auto mb-6 max-w-4xl bg-white px-12 pb-6 lg:px-24'>
+    <div class='prose-sm lg:prose-lg pt-6 prose sm:prose'>
       <Content />
     </div>
   </div>
-  {sortedPosts.map((post, i) => (
-    <div class="container mx-auto px-6 py-4 grid grid-cols-1 lg:grid-cols-2 mb-4 bg-rose-50 shadow-lg shadow-neutral-400 rounded-lg">
-      <div class="relative h-52 md:h-72 lg:h-auto">
-          <a href={import.meta.env.BASE_URL + post.slug}>
-              <Image src={post.data.image} width={1024} class="absolute inset-0 w-full h-full object-cover p-4 bg-white hover:bg-pink-200" alt={post.data.title}/>
-          </a>
-      </div>
-      <div class="px-6 py-12 md:p-16 lg:p-32 flex items-center justify-center order-last" class:list={[ i % 2 == 0 && 'lg:order-first' ]}>
-        <div>
-          <a href={import.meta.env.BASE_URL + post.slug}>
-            <h3 class="text-4xl mb-6 font-display text-black hover:text-pink leading-tight">{post.data.title}</h3>
-          </a>
-          <div class="flex items-center my-2 text-neutral-600">
-            <span class="w-4 h-4 i-fa6-solid-location-arrow"></span>
-            <span class="ml-1 mr-4">{post.data.location}</span>
-            <span class="w-4 h-4 i-fa6-solid-calendar-days"></span>
-            <span class="ml-1">
-              {
-                new Date(post.data.date).toLocaleString('en-AU', {
-                  dateStyle: 'long',
-                  timeStyle: 'short',
-                  timeZone: post.data.timezone,
-                })
-              }
-            </span>
-          </div>
-          <p>{post.data.description}</p>
-          <a
-            href={import.meta.env.BASE_URL + post.slug}
-            class="inline-block bg-pink-400 text-white hover:bg-pink-500 text-sm tracking-widest font-heading px-8 py-4 mt-4"
-          >
-            Read
+  {
+    sortedPosts.map((post, i) => (
+      <div class='grid grid-cols-1 mx-auto mb-4 rounded-lg bg-rose-50 px-6 py-4 shadow-lg shadow-neutral-400 container lg:grid-cols-2'>
+        <div class='relative h-52 lg:h-auto md:h-72'>
+          <a href={`${import.meta.env.BASE_URL}` + post.slug}>
+            <Image
+              src={post.data.image}
+              width={1024}
+              class='absolute inset-0 h-full w-full bg-white object-cover p-4 hover:bg-pink-200'
+              alt={post.data.title}
+            />
           </a>
         </div>
+        <div
+          class='order-last flex items-center justify-center px-6 py-12 lg:p-32 md:p-16'
+          class:list={[i % 2 == 0 && 'lg:order-first']}
+        >
+          <div>
+            <a href={`${import.meta.env.BASE_URL}` + post.slug}>
+              <h3 class='font-display mb-6 text-4xl text-black leading-tight hover:text-pink'>
+                {post.data.title}
+              </h3>
+            </a>
+            <div class='my-2 flex items-center text-neutral-600'>
+              <span class='i-fa6-solid-location-arrow h-4 w-4' />
+              <span class='ml-1 mr-4'>{post.data.location}</span>
+              <span class='i-fa6-solid-calendar-days h-4 w-4' />
+              <span class='ml-1'>
+                {new Date(post.data.date).toLocaleString('en-AU', {
+                  dateStyle: 'long',
+                  timeStyle: 'short',
+                  timeZone: post.data.timezone
+                })}
+              </span>
+            </div>
+            <p>{post.data.description}</p>
+            <a
+              href={`${import.meta.env.BASE_URL}` + post.slug}
+              class='font-heading mt-4 inline-block bg-pink-400 px-8 py-4 text-sm text-white tracking-widest hover:bg-pink-500'
+            >
+              Read
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  ))}
+    ))
+  }
   <Tripmap />
-  <div class="giscus max-w-4xl mx-auto"/>
-  <script is:inline src="https://giscus.app/client.js"
-    data-repo="travelens/Discussions"
-    data-repo-id="R_kgDOJKp7SA"
-    data-category="General"
-    data-category-id="DIC_kwDOJKp7SM4CU7c2"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="bottom"
-    data-theme="light"
-    data-lang="en"
-    crossorigin="anonymous"
-    async>
-  </script>
+  <div class='giscus mx-auto max-w-4xl'></div>
+  <script
+    is:inline
+    src='https://giscus.app/client.js'
+    data-repo='travelens/Discussions'
+    data-repo-id='R_kgDOJKp7SA'
+    data-category='General'
+    data-category-id='DIC_kwDOJKp7SM4CU7c2'
+    data-mapping='pathname'
+    data-strict='0'
+    data-reactions-enabled='1'
+    data-emit-metadata='0'
+    data-input-position='bottom'
+    data-theme='light'
+    data-lang='en'
+    crossorigin='anonymous'
+    async></script>
 </Trip>

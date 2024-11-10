@@ -7,11 +7,12 @@ import { SiteMetadata } from 'astro-travelens/config'
 // https://astro.build/config
 export default defineConfig({
   site: SiteMetadata.site,
-  base: 'yulefest-2022',
-  experimental: {
-    assets: true
-  },
-  integrations: [markdoc(), alpine(), UnoCSS({
-    injectReset: true
-  })]
+  base: import.meta.env.npm_package_name,
+  integrations: [
+    markdoc(),
+    alpine(),
+    UnoCSS({
+      injectReset: true
+    })
+  ]
 })

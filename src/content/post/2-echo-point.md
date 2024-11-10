@@ -8,12 +8,13 @@ timezone: Australia/NSW
 location: Echo Point
 image: ../../assets/gallery/2-echo-point/Echo Point (1).jpeg
 gallery: 2-echo-point
-map: [-33.7322,150.3122,16]
+map: [-33.7322, 150.3122, 16]
 tags:
   - Katoomba
   - Echo Point
   - morning
 ---
+
 We woke up the next morning and took a walk from our Airbnb to Echo Point, where we were greeted with the spectacular Jamison Valley covered in a blanket of mist.
 
 Echo Point lookout is located on the boundary of Blue Mountains National Park.

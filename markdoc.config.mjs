@@ -1,10 +1,12 @@
-import { defineMarkdocConfig } from '@astrojs/markdoc/config';
-import Gallery from './src/components/Gallery.astro';
+import { defineMarkdocConfig, component } from '@astrojs/markdoc/config'
 
 export default defineMarkdocConfig({
   tags: {
     gallery: {
-      render: Gallery,
-    },
-  },
-});
+      render: component('./src/components/Gallery.astro'),
+      attributes: {
+        folder: { type: String }
+      }
+    }
+  }
+})

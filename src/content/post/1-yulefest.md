@@ -8,12 +8,13 @@ timezone: Australia/NSW
 location: Carrington Hotel
 image: ../../assets/gallery/1-yulefest/Lyn, Chris, Ally, Dagmar, Julia, Jamie, Julie.jpeg
 gallery: 1-yulefest
-map: [-33.71305,150.31061,18]
+map: [-33.71305, 150.31061, 18]
 tags:
   - Katoomba
   - Carrington
   - YuleFest
 ---
+
 The historic [Carrington Hotel](https://thecarrington.com.au/) (opened in 1883) hosts a set of Yulefest Gala Dinners over the winter months in July and August. These include
 
 - Pre Dinner Drinks & Winter Canapes
