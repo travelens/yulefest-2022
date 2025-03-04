@@ -6,7 +6,7 @@ trip: YuleFest 2022
 place: Australia
 timezone: Australia/NSW
 location: Dryridge Estate
-image: ../../assets/gallery/3-dinner/Xmas Dinner (2).jpeg
+image: ../gallery/3-dinner/Xmas Dinner (2).jpeg
 gallery: 3-dinner
 map: [-33.73575, 150.21829, 17]
 tags:

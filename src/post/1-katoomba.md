@@ -6,7 +6,7 @@ trip: YuleFest 2022
 place: Australia
 timezone: Australia/NSW
 location: Katoomba
-image: ../../assets/gallery/1-katoomba/286 Katoomba.jpeg
+image: ../gallery/1-katoomba/286 Katoomba.jpeg
 gallery: 1-katoomba
 map: [-33.72555, 150.30840, 18]
 tags:

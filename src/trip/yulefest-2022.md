@@ -6,7 +6,7 @@ location: Blue Mountains
 start: 2022-07-30T09:00:00+11:00
 end: 2022-08-02T17:00:00+11:00
 description: We celebrated Christmas in July at the Carrington Hotel, and then stayed for a couple of nights at Megalong Valley with some friends.
-image: ../../assets/trip.jpeg
+image: ./trip.jpeg
 tags:
   - YuleFest
   - Carrington Hotel

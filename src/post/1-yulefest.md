@@ -6,7 +6,7 @@ trip: YuleFest 2022
 place: Australia
 timezone: Australia/NSW
 location: Carrington Hotel
-image: ../../assets/gallery/1-yulefest/Lyn, Chris, Ally, Dagmar, Julia, Jamie, Julie.jpeg
+image: ../gallery/1-yulefest/Lyn, Chris, Ally, Dagmar, Julia, Jamie, Julie.jpeg
 gallery: 1-yulefest
 map: [-33.71305, 150.31061, 18]
 tags:

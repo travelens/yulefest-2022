@@ -1,11 +1,11 @@
 ---
 import type { CollectionEntry } from 'astro:content'
-import { getCollection } from 'astro:content'
+import { getCollection, render } from 'astro:content'
 import { Image } from 'astro:assets'
-import Map from 'astro-travelens/Map.astro'
-import Post from '../layouts/Post.astro'
-import Gallery from '../components/Gallery.astro'
-import TripImage from '../assets/trip.jpeg'
+import Map from '../common/Map.astro'
+import Post from '../common/Post.astro'
+import Gallery from '../common/Gallery.astro'
+import TripImage from '../trip/trip.jpeg'
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -15,7 +15,7 @@ export async function getStaticPaths() {
   return posts
     .sort((a, b) => +a.data.date - +b.data.date)
     .map((post, i) => ({
-      params: { slug: post.slug },
+      params: { id: post.id },
       props: {
         post,
         prev: i > 0 ? posts[i - 1] : undefined,
@@ -31,7 +31,7 @@ export interface Props {
   next?: CollectionEntry<'post'>
 }
 const { post, prev, next } = Astro.props
-const { Content } = await post.render()
+const { Content } = await render(post)
 ---
 
 <Post post={post}>
@@ -56,7 +56,7 @@ const { Content } = await post.render()
     {
       prev ? (
         <a
-          href={`${import.meta.env.BASE_URL}` + prev.slug}
+          href={`${import.meta.env.BASE_URL}` + prev.id}
           class='font-heading relative block h-72 flex items-center justify-center bg-black text-white tracking-widest uppercase hover:opacity-75'
         >
           <div class='relative z-10'>Previous: {prev.data.title}</div>
@@ -86,7 +86,7 @@ const { Content } = await post.render()
     {
       next ? (
         <a
-          href={`${import.meta.env.BASE_URL}` + next.slug}
+          href={`${import.meta.env.BASE_URL}` + next.id}
           class='font-heading relative block h-72 flex items-center justify-center bg-black text-white tracking-widest uppercase hover:opacity-75'
         >
           <div class='relative z-10'>Next: {next.data.title}</div>

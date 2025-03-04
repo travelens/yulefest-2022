@@ -27,7 +27,7 @@ const posts = await getCollection('post', (post) => {
 documents = documents.concat(
   posts.map((doc) => ({
     id: doc.id,
-    slug: doc.slug,
+    slug: doc.id,
     base: `${import.meta.env.BASE_URL}`,
     collection: doc.collection,
     body: doc.body,

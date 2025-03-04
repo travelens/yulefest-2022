@@ -6,7 +6,7 @@ trip: YuleFest 2022
 place: Australia
 timezone: Australia/NSW
 location: Megalong Valley Tearooms
-image: ../../assets/gallery/4-breakfast/Breakfast at Megalong Valley Tearooms.jpeg
+image: ../gallery/4-breakfast/Breakfast at Megalong Valley Tearooms.jpeg
 gallery: 4-breakfast
 map: [-33.69587, 150.25302, 19]
 tags:

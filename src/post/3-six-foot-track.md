@@ -6,7 +6,7 @@ trip: YuleFest 2022
 place: Australia
 timezone: Australia/NSW
 location: Six Foot Track
-image: ../../assets/gallery/3-six-foot-track/Bowtells Bridge (3).jpeg
+image: ../gallery/3-six-foot-track/Bowtells Bridge (3).jpeg
 gallery: 3-six-foot-track
 map: [-33.73398, 150.21632, 17]
 tags:

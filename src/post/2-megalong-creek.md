@@ -6,7 +6,7 @@ trip: YuleFest 2022
 place: Australia
 timezone: Australia/NSW
 location: Megalong Creek Estate
-image: ../../assets/gallery/2-megalong-creek/Megaslong Creek Estate (1).jpeg
+image: ../gallery/2-megalong-creek/Megaslong Creek Estate (1).jpeg
 gallery: 2-megalong-creek
 map: [-33.7399, 150.2182, 17]
 tags:

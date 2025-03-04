@@ -1,9 +1,11 @@
 // 1. Import your utilities and schemas
 import { z, defineCollection } from 'astro:content'
+import { glob } from 'astro/loaders'
 
 // 2. Define your collections
 
-const postCollection = defineCollection({
+const post = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.md', base: './src/post' }),
   schema: ({ image }) =>
     z.object({
       draft: z.boolean().optional(),
@@ -21,7 +23,8 @@ const postCollection = defineCollection({
     })
 })
 
-const tripCollection = defineCollection({
+const trip = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.md', base: './src/trip' }),
   schema: ({ image }) =>
     z.object({
       draft: z.boolean().optional(),
@@ -39,6 +42,6 @@ const tripCollection = defineCollection({
 
 // 3. Export multiple collections to register them
 export const collections = {
-  post: postCollection,
-  trip: tripCollection
+  post,
+  trip
 }

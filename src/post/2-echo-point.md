@@ -6,7 +6,7 @@ trip: YuleFest 2022
 place: Australia
 timezone: Australia/NSW
 location: Echo Point
-image: ../../assets/gallery/2-echo-point/Echo Point (1).jpeg
+image: ../gallery/2-echo-point/Echo Point (1).jpeg
 gallery: 2-echo-point
 map: [-33.7322, 150.3122, 16]
 tags:

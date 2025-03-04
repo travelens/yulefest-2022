@@ -6,7 +6,7 @@ trip: YuleFest 2022
 place: Australia
 timezone: Australia/NSW
 location: Dryridge Estate
-image: ../../assets/gallery/4-sunrise/Sunrise (1).jpeg
+image: ../gallery/4-sunrise/Sunrise (1).jpeg
 gallery: 4-sunrise
 map: [-33.73575, 150.21829, 17]
 tags:
